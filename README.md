@@ -1,15 +1,28 @@
-# astrojs-hightlight-integration
+# Highlight SDK for Astrojs
 
-To install dependencies:
+Install and register this package in astro.config.js:
 
-```bash
-bun install
+```js
+import highlight from "astrojs-highlight-integration"
+
+
+export default defineConfig({
+	integrations: [
+    // other integrations
+		highlight({
+			orgId: "kevq5wlg",
+      options: {
+        // See all the options here: https://docs.highlight.run/reference#options
+        disableNetworkRecording: false,
+        disableConsoleRecording: false,
+        enableStrictPrivacy: false,
+        environment: 'production',
+        version: '5.2.3',
+        networkRecording: true,
+      }
+		})
+	],
+})
 ```
 
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.0.25. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+Options will be passed directly to H.init. See all available options in [the official doc](https://www.highlight.io/docs/reference#importing-the-library).
