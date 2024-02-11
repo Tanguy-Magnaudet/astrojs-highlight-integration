@@ -18,15 +18,15 @@ export type Options = {
 }
 
 
-export const buildScript = (options: Options) => {
-  if (!options.orgId) {
+export const buildScript = (config: Options) => {
+  const { orgId, options = {} } = config;
+  if (!orgId) {
     throw new Error('orgId is required in Highlight integration options')
   }
 
   return `
-  import Highlight from '@highlight-run/astro-integration/h';
-
-  Highlight.H.init(${options.orgId}, ${options.options});
-  window.H = Highlight.H;
+  import H from 'astrojs-highlight-integration/h';
+  H.init("${orgId}", ${JSON.stringify(options)});
+  window.H = H;
   `
 }

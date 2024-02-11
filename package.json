@@ -19,6 +19,10 @@
     "./h": "./dist/h.js",
     "./package.json": "./package.json"
   },
+  "files": [
+    "src",
+    "dist"
+  ],
   "devDependencies": {
     "@types/bun": "latest"
   },
