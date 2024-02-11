@@ -1,4 +1,3 @@
-
 import type { AstroIntegration } from 'astro';
 import { buildScript, type Options } from './client';
 
