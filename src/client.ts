@@ -24,7 +24,7 @@ export const buildScript = (options: Options) => {
   }
 
   return `
-  import Highlight from 'highlight.run';
+  import Highlight from '@highlight-run/astro-integration/h';
 
   Highlight.H.init(${options.orgId}, ${options.options});
   window.H = Highlight.H;

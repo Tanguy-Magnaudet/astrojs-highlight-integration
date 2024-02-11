@@ -1,6 +1,6 @@
 
 import type { AstroIntegration } from 'astro';
-import { buildScript, type Options } from './src/client';
+import { buildScript, type Options } from './client';
 
 
 export default function createPlugin(options: Options): AstroIntegration {
