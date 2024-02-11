@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "author": "Tanguy Magnaudet <tanguy@olympe-studio.xyz>",
   "module": "index.ts",
+  "homepage": "https://github.com/Tanguy-Magnaudet/astrojs-highlight-integration",
   "repository": {
     "type": "git",
     "url": "https://github.com/Tanguy-Magnaudet/astrojs-highlight-integration"
@@ -33,6 +34,7 @@
     "error monitoring",
     "session replay",
     "astro",
+    "withastro",
     "astro-integration"
   ]
 }
